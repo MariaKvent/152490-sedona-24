@@ -7,6 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+        <!--Нужно ли логотип на главной оборачивать в <а> без href, если да, то зачем?-->
         <img src="img/logo-sedona.svg" width="142" height="71" alt="Логотип сайта Седона">
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -35,11 +36,31 @@
         <b>Заинтересовались?</b>
         <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения в Седоне</p>
         <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
-        <!-- Здесь будет форма поиска гостиницы -->
+        <!-- Надо ли в форме заполнять значения полей, как в макете?-->
+        <form class="search-form" action="#" method="post">
+          <p class="search-arrive">
+            <label for="search-arrive">Дата заезда:</label>
+            <input id="saerch-arrive" type="date" name="arrive">
+          </p>
+          <p class="search-departure">
+            <label for="search-departure">Дата выезда:</label>
+            <input id="saerch-departure" type="date" name="departure">
+          </p>
+          <p class="search-adults">
+            <label for="search-adults">Взрослые:</label>
+            <input id="saerch-adults" type="number" name="adults">
+          </p>
+          <p class="search-kids">
+            <label for="search-kids">Дети:</label>
+            <input id="saerch-kids" type="number" name="kids">
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
       <p class="footer-instagram">
+        <!--А может, этот хэштег просто информационный и здесь не нужна ссылка?-->
         <a href="#">#visitsedona</a>
       </p>
       <div class="footer-social">
