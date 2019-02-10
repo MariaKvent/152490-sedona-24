@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -7,8 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <!--Нужно ли логотип на главной оборачивать в <а> без href, если да, то зачем?-->
-        <img src="img/logo-sedona.svg" width="142" height="71" alt="Логотип сайта Седона">
+        <a><img src="img/logo-sedona.svg" width="142" height="71" alt="Логотип сайта Седона"></a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
@@ -40,38 +39,37 @@
         <form class="search-form" action="#" method="post">
           <p class="search-arrive">
             <label for="search-arrive">Дата заезда:</label>
-            <input id="saerch-arrive" type="date" name="arrive">
+            <input id="search-arrive" type="text" name="arrive" placeholder="24 апреля 2017">
           </p>
           <p class="search-departure">
             <label for="search-departure">Дата выезда:</label>
-            <input id="saerch-departure" type="date" name="departure">
+            <input id="search-departure" type="text" name="departure" placeholder="4 июля 2017">
           </p>
           <p class="search-adults">
             <label for="search-adults">Взрослые:</label>
-            <input id="saerch-adults" type="number" name="adults">
+            <input id="search-adults" type="number" name="adults" placeholder="2">
           </p>
           <p class="search-kids">
             <label for="search-kids">Дети:</label>
-            <input id="saerch-kids" type="number" name="kids">
+            <input id="search-kids" type="number" name="kids" placeholder="0">
           </p>
           <button class="button" type="submit">Найти</button>
         </form>
       </section>
     </main>
     <footer class="main-footer">
-      <p class="footer-instagram">
-        <!--А может, этот хэштег просто информационный и здесь не нужна ссылка?-->
+      <p class="footer-hashtag">
         <a href="#">#visitsedona</a>
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">YouTube</span></a></li>
         </ul>
       </div>
       <p class="footer-copyright">website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML-академия</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML-академия</span></a>
       </p>
     </footer>
   </body>
