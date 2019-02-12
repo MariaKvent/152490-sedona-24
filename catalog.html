@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы &ndash; Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -30,7 +33,7 @@
           <li class="catalog-hotels">
             <img src="img/hotel-1.jpg" width="135" height="90" alt="Внешний вид гостиницы Amara Resort & Spa">
             <div>
-              <h3>
+              <h3 class="hotel-name">
                 <a href="hotels/amararesortandspa.html">Amara resort & spa</a>
               </h3>
               <div>
@@ -52,7 +55,7 @@
           <li class="catalog-hotels">
             <img src="img/hotel-2.jpg" width="135" height="90" alt="Внешний вид мотеля Desert Quail Inn">
             <div>
-              <h3>
+              <h3 class="hotel-name">
                 <a href="hotels/desertquailinn.html">Desert quail inn</a>
               </h3>
               <div>
@@ -68,13 +71,13 @@
               <p class="catalog-hotels-category"><!--Звезды будут множественным фоном-->
                 <span class="visually-hidden">3 звезды</span>
               </p>
-              <p class="catalog-hotels-category">Рейтинг: 8,9</p>
+              <p class="catalog-hotels-rank">Рейтинг: 8,9</p>
             </div>
           </li>
           <li class="catalog-hotels">
             <img src="img/hotel-3.jpg" width="135" height="90" alt="Внешний вид апартаментов Villas at Poco Diablo">
             <div>
-              <h3>
+              <h3 class="hotel-name">
                 <a href="hotels/villasatpocodiablo.html">Villas at poco diablo</a>
               </h3>
               <div>
@@ -90,7 +93,7 @@
               <p class="catalog-hotels-category"><!--Звезды будут множественным фоном-->
                 <span class="visually-hidden">2 звезды</span>
               </p>
-              <p class="catalog-hotels-category">Рейтинг: 9,2</p>
+              <p class="catalog-hotels-rank">Рейтинг: 9,2</p>
             </div>
           </li>
         </ul>
@@ -101,7 +104,7 @@
         <a href="#">#visitsedona</a>
       </p>
       <div class="footer-social">
-        <ul>
+        <ul class="social">
           <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
           <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
           <li><a class="social-button" href="#"><span class="visually-hidden">YouTube</span></a></li>
