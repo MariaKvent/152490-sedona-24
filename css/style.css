@@ -8,6 +8,24 @@ body {
   background-color: #f2f2f2;
 }
 
+/*.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
+
 .catalog-page {
   line-height: 21px;
 }
@@ -210,4 +228,159 @@ a {
 
 .catalog-hotels-rank {
   background-color: #f2f2f2;
+}
+
+/*----Стили для сетки----*/
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 2762px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  height: 56px;
+}
+
+.site-navigation {
+  display: flex;
+  padding-left: 73px;
+  padding-right: 73px;
+  margin: 0;
+  padding-top: 12px;
+}
+
+.site-navigation li {
+  width: 240px;
+}
+
+.left-row {
+text-align: left;
+}
+
+.right-row-map {
+  text-align: right;
+  margin-left: 96px;
+}
+
+.right-row {
+text-align: right;
+}
+
+.main-navigation-logo {
+  position: absolute;
+  padding-left: 529px;
+  width: 142;
+  height: 71;
+}
+
+.greeting {
+  height: 509px;
+  margin-bottom: 59px;
+}
+
+.intro-features,
+.intro-search {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-button {
+  display: block;
+  width: 574px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 574px;
+}
+
+.quantity {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social {
+  margin: 0 auto;
+}
+
+.footer-hashtag {
+  padding-left: 130px;
+}
+
+.footer-copyright {
+  padding-right: 100px;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-name {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-hotels img {
+  padding-right: 31px;
+}
+
+.catalog-hotels {
+  display: flex;
+  flex-direction: row;
+  padding: 31px 73px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  width: 652px;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 7px;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 241px;
+}
+
+.catalog-hotels-category {
+  padding: 0;
+  margin: 0;
 }
