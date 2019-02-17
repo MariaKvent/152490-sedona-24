@@ -37,6 +37,7 @@ a {
 
 .main-navigation {
   font-weight: 700;
+  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
 }
@@ -164,6 +165,10 @@ a {
   background-color: #5496bd;
 }
 
+.main-footer {
+  line-height: 26px;
+}
+
 .footer-hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -274,9 +279,10 @@ text-align: right;
 
 .main-navigation-logo {
   position: absolute;
-  padding-left: 529px;
-  width: 142;
-  height: 71;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 142px;
+  height: 71px;
 }
 
 .greeting {
@@ -313,26 +319,28 @@ text-align: right;
 
 .main-footer-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 120px;
+}
+
+.footer-hashtag,
+.social,
+.footer-copyright {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column {
+  display: flex;
+  justify-content: center;
+  width: 400px;
 }
 
 .social {
   display: flex;
   justify-content: center;
-}
-
-.footer-social {
-  margin: 0 auto;
-}
-
-.footer-hashtag {
-  padding-left: 130px;
-}
-
-.footer-copyright {
-  padding-right: 100px;
+  flex-wrap: wrap;
 }
 
 .catalog-list {
