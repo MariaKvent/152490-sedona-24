@@ -8,9 +8,9 @@ body {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
+  color: #333333;
 }
 
 a {
@@ -31,8 +31,8 @@ a {
   position: relative;
   z-index: 1;
   width: 1200px;
-  margin: 0 auto;
   min-height: 56px;
+  margin: 0 auto;
   background-color: #ffffff;
   line-height: 26px;
   font-weight: 700;
@@ -41,19 +41,19 @@ a {
 
 .main-navigation-logo {
   position: absolute;
-  overflow: visible;
   left: 50%;
   transform: translateX(-50%);
   width: 142px;
   height: 71px;
+  overflow: visible;
 }
 
 .site-navigation {
   display: flex;
+  padding-top: 14px;
   padding-left: 72px;
   padding-right: 73px;
   margin: 0;
-  padding-top: 14px;
   list-style: none;
 }
 
@@ -74,38 +74,57 @@ a {
   text-align: right;
 }
 
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: #cacaca;
+}
+
+.site-navigation-current a {
+  color: #c1b8b2;
+}
+
+.site-navigation-current a:hover {
+  color: #c1b8b2;
+}
+
 /*---Основной блок---*/
 
 .greeting {
-  width: auto;
-  background-color: white;
-  height: 510px;
   position: relative;
+  width: auto;
+  height: 510px;
   margin-top: -56px;
   padding-bottom: 56px;
+  background-color: white;
 }
 
 .back-picture {
   background: #81b3d2;
   background-image:
     url("../img/greeting-bg.jpg");
-    height: 564px;
+    z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
     width: 1200px;
-    z-index: 0;
+    height: 564px;
+  line-height: 0px;
 }
 
 .intro-welcome {
   position: relative;
-  left: 370px;
   top: 132px;
+  left: 370px;
 }
 
 .intro-mask {
   position: relative;
-  left: 0;
-  top: 145px;
+  top: 153px;
+  left: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .intro-features {
@@ -120,10 +139,10 @@ a {
 
 .intro-features b {
   display: block;
-  margin: 0 auto;
   width: 450px;
-  margin-top: 57px;
   height: 80px;
+  margin: 0 auto;
+  margin-top: 57px;
   font-size: 21px;
   font-weight: 700;
 }
@@ -148,9 +167,9 @@ a {
 }
 
 .feature-list li {
-  list-style: none;
   height: 256px;
   margin: 0;
+  list-style: none;
 }
 
 .feature-1 b,
@@ -158,15 +177,15 @@ a {
 .feature-describe b,
 .feature-other b  {
   display: block;
-  font-size: 21px;
-  font-weight: 700;
-  color: #ffffff;
   width: 153px;
   margin: 0 auto;
   padding-top: 48px;
   padding-bottom: 24px;
   white-space: pre-wrap;
+  color: #ffffff;
   line-height: 21px;
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .feature-describe b,
@@ -175,8 +194,8 @@ a {
 }
 
 .feature-describe b {
-  margin-top: 162px;
   position: relative;
+  margin-top: 162px;
 }
 
 .habitation b::after {
@@ -184,11 +203,11 @@ a {
   position: absolute;
   background-image:
     url("../img/icon-1.svg");
-  width: 75px;
-  height: 72px;
+    top: -100px;
+    right: 40px;
+    width: 75px;
+    height: 72px;
   background-repeat: no-repeat;
-  top: -100px;
-  right: 40px;
 }
 
 .food b::after {
@@ -196,11 +215,11 @@ a {
   position: absolute;
   background-image:
     url("../img/icon-3.svg");
-  width: 74px;
-  height: 72px;
+    top: -100px;
+    right: 40px;
+    width: 74px;
+    height: 72px;
   background-repeat: no-repeat;
-  top: -100px;
-  right: 40px;
 }
 
 .gift b::after {
@@ -208,11 +227,11 @@ a {
   position: absolute;
   background-image:
     url("../img/icon-2.svg");
-  width: 64px;
-  height: 76px;
+    top: -105px;
+    right: 45px;
+    width: 64px;
+    height: 76px;
   background-repeat: no-repeat;
-  top: -105px;
-  right: 45px;
 }
 
 .feature-1,
@@ -220,10 +239,10 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  text-align: center;
   height: 256px;
   background-color: #81b3d2;
   color: #ffffff;
+  text-align: center;
 }
 
 .cell-feature {
@@ -233,17 +252,17 @@ a {
 
 .cell-feature span {
   display: block;
-  line-height: 21px;
   padding-bottom: 21px;
+  line-height: 21px;
 }
 
 .feature-1 p,
 .feature-2 p,
 .feature-other p {
   width: 295px;
-  text-align: center;
   margin: 0 auto;
   line-height: 21px;
+  text-align: center;
 }
 
 .feature-other p {
@@ -266,17 +285,16 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
+  z-index: 1;
   width: 400px;
   height: 330px;
-  color: #000000;
-  z-index: 1;
   background-color: #ffffff;
+  color: #000000;
 }
 
 .feature-describe-pic-gift {
   padding-top: 56px;
   padding-bottom: 21px;
-
 }
 
 .feature-describe b {
@@ -312,18 +330,18 @@ a {
 
 .search b {
   display: block;
-  text-align: center;
   padding-top: 49px;
-  font-size: 30px;
+  text-align: center;
   line-height: 36px;
+  font-size: 30px;
   font-weight: 700;
 }
 
 .search-info {
   display: block;
+  margin: 24px auto 47px;
   text-align: center;
   line-height: 24px;
-  margin: 24px auto 47px;
 }
 
 .search-button {
@@ -331,14 +349,23 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 2;
   width: 568px;
   height: 86px;
   margin: 0 auto;
+  background-color: #766357;
+  color: #ffffff;
   font-size: 21px;
   font-weight: 700;
-  color: #ffffff;
-  background-color: #766357;
-  z-index: 2;
+}
+
+.search-button:hover {
+  background-color: #604e43;
+}
+
+.search-button:focus {
+  background-color: #503e33;
+  color: #857871;
 }
 
 @keyframes move {
@@ -360,7 +387,7 @@ a {
 }
 
 .search-form {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -368,8 +395,12 @@ a {
   margin: 0 auto;
   width: 568px;
   height: 395px;
-  font-weight: 700;
   background-color: #ffffff;
+  font-weight: 700;
+}
+
+.form-hidden {
+  display: none;
 }
 
 .form-show {
@@ -419,58 +450,66 @@ a {
 .search-label {
   display: inline-block;
   vertical-align: middle;
-
-  padding-left: 3px;
-  padding-top: 3px;
   width: 107px;
   height: 33px;
+  padding-left: 3px;
+  padding-top: 3px;
 }
 
 .search-label-kids {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 10px;
-  padding-top: 4px;
   width: 63px;
   height: 33px;
+  padding-left: 10px;
+  padding-top: 4px;
 }
 
 .search-arrive input,
 .search-departure input {
-  border: none;
-  background-color: #f2f2f2;
+  width: 334px;
   height: 36px;
   padding-left: 12px;
-  width: 334px;
-  font-size: 14px;
+  border: none;
   line-height: 26px;
+  font-size: 14px;
   font-weight: 700;
+  background-color: #f2f2f2;
   color: #000000;
   text-transform: uppercase;
 }
 
-.search-arrive .calendar {
-  position: relative;
-  top: -31px;
-  left: 430px;
-  width: 21px;
-  height: 22px;
-  font-size: 0;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
+.search-arrive input:hover {
+  background-color: #ebebeb;
 }
 
+.search-arrive input:focus {
+  background-color: #ffffff;
+  outline: none;
+  outline: 2px solid #e5e5e5;
+}
+
+.search-departure input:hover {
+  background-color: #ebebeb;
+}
+
+.search-departure input:focus {
+  background-color: #ffffff;
+  outline: none;
+  outline: 2px solid #e5e5e5;
+}
+
+.search-arrive .calendar,
 .search-departure .calendar {
   position: relative;
   top: -31px;
   left: 430px;
   width: 21px;
   height: 22px;
-  font-size: 0;
-  border: 0;
   padding: 0;
+  border: 0;
   background-color: transparent;
+  font-size: 0;
 }
 
 .calendar:hover g{
@@ -483,16 +522,36 @@ a {
 
 .search-adults input,
 .search-kids input {
-  border: none;
-  background-color: #f2f2f2;
   height: 36px;
   width: 61px;
   padding-left: 53px;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
+  border: none;
+  background-color: #f2f2f2;
   color: #000000;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
+}
+
+.search-adults input:hover {
+  background-color: #ebebeb;
+}
+
+.search-adults input:focus {
+  background-color: #ffffff;
+  outline: none;
+  outline: 2px solid #e5e5e5;
+}
+
+.search-kids input:hover{
+  background-color: #ebebeb;
+}
+
+.search-kids input:focus {
+  background-color: #ffffff;
+  outline: none;
+  outline: 2px solid #e5e5e5;
 }
 
 .search-adults {
@@ -505,17 +564,17 @@ a {
   left: -103px;
   width: 11px;
   height: 11px;
-  font-size: 0;
-  border: 0;
   padding: 0;
+  border: 0;
   background-color: transparent;
+  font-size: 0;
 }
 
 .less::before{
   content: "";
   position: absolute;
-  left: 0;
   top: 4px;
+  left: 0;
   width: 11px;
   height: 3px;
   background-color: #a9a9a9;
@@ -527,17 +586,17 @@ a {
   left: -40px;
   width: 11px;
   height: 11px;
-  font-size: 0;
-  border: 0;
   padding: 0;
+  border: 0;
   background-color: transparent;
+  font-size: 0;
 }
 
 .more::before{
   content: "";
   position: absolute;
-  left: 0;
   top: 4px;
+  left: 0;
   width: 11px;
   height: 3px;
   background-color: #a9a9a9;
@@ -559,10 +618,10 @@ a {
   left: -104px;
   width: 11px;
   height: 11px;
-  font-size: 0;
-  border: 0;
   padding: 0;
+  border: 0;
   background-color: transparent;
+  font-size: 0;
 }
 
 .search-kids .more {
@@ -571,10 +630,10 @@ a {
   left: -43px;
   width: 11px;
   height: 11px;
-  font-size: 0;
-  border: 0;
   padding: 0;
+  border: 0;
   background-color: transparent;
+  font-size: 0;
 }
 
 .quantity {
@@ -582,28 +641,73 @@ a {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 518px;
   height: 36px;
   margin-bottom: 32px;
-  width: 518px;
   padding-right: 0;
 }
 
+.more:hover::before,
+.more:hover::after,
+.less:hover::before {
+  background-color: #000000;
+}
+
+.more:focus::before,
+.more:focus::after,
+.less:focus::before {
+  background-color: #81b3d2;
+}
+
+.search-departure button:focus,
+.search-arrive button:focus,
+.search-adults button:focus,
+.search-kids button:focus {
+  outline: none;
+}
+
 .button {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #ffffff;
+  width: 458px;
+  height: 58px;
   margin: 0;
   margin-top: 24px;
-  background-color: #81b3d2;
-  text-transform: uppercase;
   border: none;
-  height: 58px;
-  width: 458px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:focus {
+  background-color: #5496bd;
+  color: #7eb0cd;
 }
 
 .map {
   line-height: 0px;
+}
+
+.map-pic {
+  width: auto;
+  height: 593px;
+  background: #f2f2f2;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  line-height: 0px;
+}
+
+.map-hidden {
+  display: none;
+}
+
+.map-pic-hidden {
+  background-image: none;
 }
 
 .map iframe {
@@ -616,12 +720,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 121px;
-  width: 1200px;
-  margin: 0 auto;
-  background-color: #ffffff;
   position: relative;
+  width: 1200px;
+  height: 121px;
+  margin: 0 auto;
   margin-top: -121px;
+  background-color: #ffffff;
   line-height: 26px;
   opacity: 0.9;
 }
@@ -629,8 +733,8 @@ a {
 .footer-hashtag,
 .social,
 .footer-copyright {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .footer-column {
@@ -649,8 +753,8 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  list-style: none;
   width: 150px;
+  list-style: none;
 }
 
 .social-button {
@@ -658,10 +762,22 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  list-style: none;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  list-style: none;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:focus {
+  background-color: #5496bd;
+}
+
+.social-button:focus path {
+  fill: #88b6d1;
 }
 
 .footer-copyright {
@@ -673,6 +789,27 @@ a {
   height: 115px;
 }
 
+.footer-copyright a {
+  background:
+    url("../img/logo-htmlacademy.svg");
+    position: relative;
+    width: 115px;
+    height: 42px;
+  background-repeat: no-repeat;
+}
+
+.footer-copyright a:hover {
+  background:
+    url("../img/logo-htmlacademy-hover.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-copyright a:focus {
+  background:
+    url("../img/logo-htmlacademy-focus.svg");
+  background-repeat: no-repeat;
+}
+
 /*---Каталог---*/
 
 .catalog-page {
@@ -680,55 +817,55 @@ a {
 }
 
 .filters {
-  width: auto;
-  background-color: white;
-  min-height: 304px;
   position: relative;
+  width: auto;
+  min-height: 304px;
   margin-top: -56px;
+  background-color: white;
 }
 
 .filter-bg {
+  z-index: 0;
+  width: 1200px;
+  min-height: 273px;
   background: #81b3d2;
   background-image: url("../img/filter-background.jpg");
-  min-height: 273px;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
-  z-index: 0;
 }
 
 .filter {
-  padding-top: 83px;
-  margin-left: 72px;
-  margin-right: 73px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 72px;
+  margin-right: 73px;
+  padding-top: 83px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter fieldset {
-  border: none;
+  width: 230px;
   margin: 0;
   padding: 0;
-  width: 230px;
+  border: none;
 }
 
 .filter legend {
+  min-width: 150px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 25px;
-  min-width: 150px;
 }
 
 .filter ul {
-  list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .filter fieldset:last-of-type {
@@ -741,8 +878,8 @@ a {
 }
 
 .filter-option label {
-  position: relative;
   display: block;
+  position: relative;
   cursor: pointer;
   user-select: none;
 }
@@ -750,8 +887,8 @@ a {
 .filter-option label::before {
   content: "";
   position: absolute;
-  left: -40px;
   top: -1px;
+  left: -40px;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
@@ -774,8 +911,8 @@ a {
 .filter-input-checkbox:disabled ~ label::before {
   content: "";
   position: absolute;
-  left: -40px;
   top: -1px;
+  left: -40px;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off-dis.svg");
@@ -786,8 +923,8 @@ a {
 .filter-input-checkbox:checked:disabled ~ label::before {
   content: "";
   position: absolute;
-  left: -40px;
   top: -1px;
+  left: -40px;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-on-dis.svg");
@@ -801,8 +938,8 @@ a {
 
 .filter-range-title {
   margin-bottom: 9px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 21px;
 }
 
@@ -810,28 +947,28 @@ a {
   position: relative;
   height: 33px;
   margin-bottom: 20px;
-  font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  font-size: 0;
 }
 
 .price-controls::after {
   content: "";
   position: absolute;
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   width: 2px;
   height: 22px;
   background: #ffffff;
-  transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
+  padding-top: 5px;
   font-size: 14px;
   line-height: 21px;
-  padding-top: 5px;
-  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -848,10 +985,10 @@ a {
 .price-controls input {
   width: 50px;
   margin: 0;
+  border: none;
+  background: none;
   color: inherit;
   font: inherit;
-  background: none;
-  border: none;
 }
 
 .range-controls {
@@ -875,10 +1012,10 @@ a {
   top: -9px;
   width: 4px;
   height: 4px;
-  background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  background: #ababab;
   cursor: pointer;
 }
 
@@ -897,29 +1034,26 @@ a {
 .btn-transparent {
   display: block;
   margin: 0 auto;
+  margin-left: 84px;
   padding: 6px 34px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
   cursor: pointer;
-  margin-left: 84px;
 }
 
 .btn-transparent:hover {
-  color: #000000;
   background: #ffffff;
+  color: #000000;
 }
 
 .sort {
   width: auto;
-  padding-left: 72px;
-  padding-right: 73px;
-  padding-top: 31px;
-  padding-bottom: 30px;
+  padding: 29px 73px 29px 72px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -927,28 +1061,41 @@ a {
   display: inline-block;
   vertical-align: middle;
   width: 143px;
-  line-height: 26px;
+  margin-right: 17px;
   font-size: 21px;
   font-weight: 700;
-  margin-right: 17px;
+  line-height: 26px;
 }
 
-.sort span {
-  line-height: 18px;
+.sort p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding-top: 3px;
   font-size: 12px;
+  line-height: 26px;
 }
 
 .sort-option {
   display: inline-block;
   vertical-align: middle;
-  width: 500px;
-  padding: 0;
   margin-right: 63px;
+  padding: 0;
+  width: 500px;
 }
 
 .sort-option a {
+  border-bottom: 1px dotted #81b3d2;
   color: #cacaca;
-  border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-option a:hover {
+  color: #81b3d2;
+}
+
+.sort-option a:focus {
+  border: none;
+  color: #000000;
 }
 
 .sort-option ul {
@@ -959,39 +1106,120 @@ a {
 .sort-option li {
   display: inline-block;
   vertical-align: middle;
-  list-style: none;
   padding-left: 30px;
-  line-height: 18px;
   font-size: 12px;
+  line-height: 18px;
+  list-style: none;
 }
 
 .sort-option li:first-child {
   padding-left: 35px;
 }
 
+.sort-option-active a {
+  border: none;
+  color: #81b3d2;
+}
+
 .sort-dir {
   display: inline-block;
   vertical-align: middle;
+  width: 242px;
   text-align: right;
-  width: 245px;
-  }
+}
 
-.sort-dir a:first-child {
-  padding-right: 5px;
+.up-dir {
+  display: inline-block;
+  vertical-align: middle;
+  background:
+    url("../img/icon-up-dir.svg");
+    position: relative;
+    width: 13px;
+    height: 10px;
+  background-repeat: no-repeat;
+}
+
+.up-dir:hover {
+  background:
+    url("../img/icon-up-dir-hover.svg");
+  background-repeat: no-repeat;
+}
+
+.up-dir:focus {
+  background:
+    url("../img/icon-up-dir-active-focus.svg");
+  background-repeat: no-repeat;
+}
+
+.down-dir {
+  display: inline-block;
+  vertical-align: middle;
+  background:
+    url("../img/icon-down-dir.svg");
+    position: relative;
+    left: 5px;
+    width: 13px;
+    height: 10px;
+    background-position: center;
+  background-repeat: no-repeat;
+}
+
+.down-dir:hover {
+  background:
+    url("../img/icon-down-dir-hover.svg");
+  background-repeat: no-repeat;
+}
+
+.down-dir:focus {
+  background:
+    url("../img/icon-down-dir-active-focus.svg");
+  background-repeat: no-repeat;
+}
+
+.down-dir-active {
+  display: inline-block;
+  vertical-align: middle;
+  background:
+    url("../img/icon-down-dir-active-focus.svg");
+    width: 13px;
+    height: 10px;
+    background-position: center;
+    position: relative;
+    left: 5px;
+  background-repeat: no-repeat;
+}
+
+.up-dir-active {
+  display: inline-block;
+  vertical-align: middle;
+  background:
+    url("../img/icon-up-dir-active-focus.svg");
+    position: relative;
+    width: 13px;
+    height: 10px;
+  background-repeat: no-repeat;
 }
 
 .catalog {
-  padding-bottom: 121px;
   min-height: 451px;
+  padding-bottom: 121px;
   line-height: 0px;
 }
 
 .hotel-name {
-  padding: 0;
   margin: 0;
-  line-height: 26px;
   margin-top: -6px;
   margin-bottom: 18px;
+  padding: 0;
+  line-height: 26px;
+}
+
+.hotel-name a:hover {
+  color: #81b3d2;
+}
+
+.hotel-name a:focus {
+  color: #b2b2b2;
 }
 
 .catalog-list {
@@ -1008,8 +1236,8 @@ a {
 .column-1 {
   display: flex;
   flex-direction: column;
-  padding-right: 5px;
   justify-content: space-between;
+  padding-right: 5px;
 }
 
 .column-2 {
@@ -1027,59 +1255,59 @@ a {
 }
 
 .amararesortandspa .catalog-hotels-category {
+  position: relative;
+  min-width: 240px;
+  min-height: 20px;
   background-image:
     url("../img/star.svg"),
     url("../img/star.svg"),
     url("../img/star.svg"),
     url("../img/star.svg");
-  position: relative;
   background-repeat: no-repeat;
   background-position:
     top -1px right 1px,
     top -1px right 24px,
     top -1px right 49px,
     top -1px right 73px;
-  min-width: 240px;
-  min-height: 20px;
 }
 
 .desertquailinn .catalog-hotels-category {
+  position: relative;
+  min-width: 240px;
+  min-height: 20px;
   background-image:
     url("../img/star.svg"),
     url("../img/star.svg"),
     url("../img/star.svg");
-  position: relative;
   background-repeat: no-repeat;
   background-position:
     top -1px right 1px,
     top -1px right 24px,
     top -1px right 49px;
-  min-width: 240px;
-  min-height: 20px;
 }
 
 .villasatpocodiablo .catalog-hotels-category {
+  position: relative;
+  min-width: 240px;
+  min-height: 20px;
   background-image:
     url("../img/star.svg"),
     url("../img/star.svg");
-  position: relative;
   background-repeat: no-repeat;
   background-position:
     top -1px right 0,
     top -1px right 24px;
-    min-width: 240px;
-    min-height: 20px;
 }
 
 .catalog-hotels-rank {
   display: inline-block;
   vertical-align: bottom;
-  padding-top: 14px;
-  margin: 0;
-  height: 15px;
   width: 112px;
-  text-align: center;
+  height: 15px;
+  margin: 0;
+  padding-top: 14px;
   background-color: #f2f2f2;
+  text-align: center;
 }
 
 .catalog-hotels img {
@@ -1096,181 +1324,17 @@ a {
 
 .catalog-hotels h3 {
   font-size: 21px;
-  line-height: 26px;
   font-weight: 700;
+  line-height: 26px;
 }
 
 .catalog-hotels .about {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #81b3d2;
   width: 110px;
-}
-
-.column a {
-  text-align: center;
-  height: 24px;
-  padding-top: 3px;
-}
-
-.catalog-hotels .button {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #766357;
-  width: 142px;
-  height: 24px;
-  padding-top: 3px;
-}
-
-.catalog-hotels-category {
-  padding: 0;
-  margin: 0;
-}
-
-/*----Стили styleguide----*/
-
-.site-navigation a:hover {
-  color: #81b3d2;
-}
-
-.site-navigation a:focus {
-  color: #cacaca;
-}
-
-.site-navigation-current a {
-  color: #c1b8b2;
-}
-
-.site-navigation-current a:hover {
-  color: #c1b8b2;
-}
-
-.search-button:hover {
-  background-color: #604e43;
-}
-
-.search-button:focus {
-  color: #857871;
-  background-color: #503e33;
-}
-
-.search-arrive input:hover {
-  background-color: #ebebeb;
-}
-
-.search-departure input:hover {
-  background-color: #ebebeb;
-}
-
-.search-adults input:hover {
-  background-color: #ebebeb;
-}
-
-.search-kids input:hover{
-  background-color: #ebebeb;
-}
-
-.search-arrive input:focus {
-  background-color: #ffffff;
-  outline: none;
-  outline: 2px solid #e5e5e5;
-}
-
-.search-departure input:focus {
-  background-color: #ffffff;
-  outline: none;
-  outline: 2px solid #e5e5e5;
-}
-
-.search-adults input:focus {
-  background-color: #ffffff;
-  outline: none;
-  outline: 2px solid #e5e5e5;
-}
-
-.search-kids input:focus {
-  background-color: #ffffff;
-  outline: none;
-  outline: 2px solid #e5e5e5;
-}
-
-.more:hover::before,
-.more:hover::after,
-.less:hover::before {
-  background-color: #000000;
-}
-
-.more:focus::before,
-.more:focus::after,
-.less:focus::before {
   background-color: #81b3d2;
-}
-
-.button:hover {
-  background-color: #669ec0;
-}
-
-.button:focus {
-  color: #7eb0cd;
-  background-color: #5496bd;
-}
-
-.social-button:hover {
-  background-color: #669ec0;
-}
-
-.social-button:focus {
-  background-color: #5496bd;
-}
-
-.social-button:focus path {
-  fill: #88b6d1;
-}
-
-.footer-copyright a:hover path {
-  fill: #81b3d2;
-}
-
-.footer-copyright a:focus path {
-  fill: #bdbbbc;
-}
-
-.sort-option-active a {
-  color: #81b3d2;
-  border: none;
-}
-
-.sort-option a:hover {
-  color: #81b3d2;
-}
-
-.sort-option a:focus {
-  color: #000000;
-  border: none;
-}
-
-.active path  {
-  fill: #81b3d2;
-}
-
-.sort-dir a:hover path {
-  fill: #000000;
-}
-
-.sort-dir a:focus path {
-  fill: #81b3d2;
-}
-
-.hotel-name a:hover {
-  color: #81b3d2;
-}
-
-.hotel-name a:focus {
-  color: #b2b2b2;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
 }
 
 .catalog-hotels .about:hover {
@@ -1282,6 +1346,23 @@ a {
   background-color: #5496bd;
 }
 
+.column a {
+  height: 24px;
+  padding-top: 3px;
+  text-align: center;
+}
+
+.catalog-hotels .button {
+  width: 142px;
+  height: 24px;
+  padding-top: 3px;
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
 .catalog-hotels .button:hover {
   background-color: #604e43;
 }
@@ -1289,6 +1370,11 @@ a {
 .catalog-hotels .button:focus {
   color: #857871;
   background-color: #503e33;
+}
+
+.catalog-hotels-category {
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),

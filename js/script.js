@@ -1,3 +1,7 @@
+var window = document.querySelector(".container");
+var mappic = document.querySelector(".map-pic");
+var map = document.querySelector(".map-hidden");
+var iframe = document.querySelector(".map-hidden");
 var link = document.querySelector(".search-button");
 var form = document.querySelector(".search-form");
 var arrive = form.querySelector("[name=arrive]");
@@ -5,6 +9,12 @@ var departure = form.querySelector("[name=departure]");
 var adults = form.querySelector("[name=adults]");
 var kids = form.querySelector("[name=kids]");
 
+window.addEventListener("load", function (evt) {
+  evt.preventDefault();
+  form.classList.add("form-hidden");
+  mappic.classList.add("map-pic-hidden");
+  map.classList.remove("map-hidden");
+});
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
